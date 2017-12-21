@@ -1,0 +1,565 @@
+body {
+	background: url("../images/32.png") no-repeat center fixed;
+	background-size: cover;
+	font-family: 'Roboto Slab', serif;
+}
+
+/* Navigation */
+
+.navigation {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav {
+	width: 100%;
+}
+
+.nav-link {
+	color: ivory;
+}
+
+.nav-item {
+	margin-left: 10px;
+}
+
+.logo-style {
+	color: #fab940;
+}
+
+/* Index Header */
+
+.main-title  {
+	height: 94vh;
+}
+
+.title {
+	padding: 180px 50px;
+}
+
+.main-title p {
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 85px; 
+}
+
+.main-title h1 {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6); /*rgb(36, 36, 36);*/
+	padding: 0px 15px 5px;
+	border-radius: 20px;
+	color: #fab940;
+	font-size: 125px;
+	text-shadow: 2px 2px 4px #000000;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Button "Order" */
+	
+.odet-pizza {
+	padding: 0 65px 230px 65px;
+}
+
+/* Menu content */
+
+.fatherMenu {
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-navigation {	
+	background-color: #fcf6ec;
+	text-align: right;
+	padding-top: 15px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+
+.border-menu {
+	border-right: 2px solid black;
+	padding-right: 10px; 	 
+} 	
+
+.menu-content {
+	background-color: #fcf6ec;	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px; 	
+}
+
+.tab-content {
+	padding-left: 15px;
+}
+
+.menu-navigation, .menu-content {
+	margin-top: 1vh;
+	margin-bottom: 9vh;	
+}
+    
+
+.container-content {
+	padding-top: 10px; 
+	margin-top: 15px; 	
+	margin-bottom: 15px;    	 	
+	background-color: #FFEEDB;
+	border: 2px solid #9b040c;
+	border-top-right-radius: 25px;		
+	
+} 	
+
+.menuRight {
+	text-align: center;
+	font-weight:bold;
+	font-size: 1.2em;
+	color: #9b040c;  
+}
+
+.menuLeft {
+	text-align: left;
+	line-height: 1.5em;
+	margin-bottom: 0;
+}
+
+.ingredientsOfDishes {
+	padding-left: 15px;	 
+}
+
+/* Gallery */
+
+.gallery-box {
+	border: 4px solid #fcf6ec;
+	border-radius: 5px;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	padding: 0;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Pizza */
+
+.pizza-h1 {
+	margin: 0;
+	padding: 5px 15px;
+	color: #fcf6ec;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.pizza-h1-span {
+	color: #fab940; 
+}
+
+.containerPizza {
+	background-color: #fcf6ec; 
+}
+
+.containerPizza h3 {
+	color: #9b040c;
+}
+
+.price {
+	color: #9b040c;
+	font-size: 25px;
+}
+
+.pizzas {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttonPizzaOrder {
+	display: inline-block;
+	margin: 10px 470px 20px;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: black;
+	background-color: #fab940;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+.buttonPizzaOrder:hover {
+	 background-color: black;
+	 text-decoration: none;
+	 color: #fab940;
+}
+  
+.buttonPizzaOrder:active {
+	background-color: black;
+	color: #fab940;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: translateY(4px);
+}
+
+/* Order */
+
+.main {
+	height: 80vh;
+}
+
+.container-order {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 25px;
+	line-height: 1.2;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: ivory;
+	border-radius: 25px;
+}
+
+.row-order {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+.form-quantity {
+	width: 170px;
+}
+
+.form-group {
+	padding-right: 70px;
+	padding-left: 10px;
+}
+
+.btn {
+	margin-left: 12px;
+	color: black;
+	background-color: #fab940;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: #A65900;
+	text-decoration: none;
+	color: black;
+}
+
+.head-order {
+	color: #fab940;
+	text-align: center;
+	text-shadow: 2px 2px #0d0d0d;
+}
+
+#modalBook, #modalOrder {
+	color: black;
+}
+
+/* About us */
+
+.navigation-about {
+	background-color: #fcf6ec;
+	text-align: right;
+	padding-top: 15px;	
+}
+
+.border-about {
+	border-right: 2px solid black;
+	padding-right: 10px;
+}
+
+.contant-about {
+	padding-top: 10px;
+	background-color: #fcf6ec;	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-house-about {
+	margin-right: 10px; 
+}
+
+.article-about {
+	padding: 10px;
+}	
+
+.article-card-about {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px;
+	min-height: 400px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name-stuff {
+	color: #9b040c;	
+}
+
+.stuff {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 15px;
+	min-height: 550px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+
+/* Footer */
+
+.footer {
+	color: #fab940;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.copyright {
+	color: #fab940;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-brands {
+	padding-top: 190px;
+	text-align: center;
+}
+
+.footer-brands a {
+	color: #fab940;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.footer-brands > p > a:hover {
+	color: #A65900
+}
+
+.footer-brands p {
+	display: inline-block;
+}
+
+.footer-map {
+	text-align: center;
+}
+
+.footer-addres {
+	text-align: center;
+}
+
+.footer-addres b {
+	font-size: 20px;
+}
+
+#map {
+	width: 65%;
+	height: 320px;
+	margin: auto;
+}
+
+/* Media Queries */
+
+@media (min-width: 300px) and (max-width: 576px) {
+
+.buttonPizzaOrder {
+	margin: 10px 85px 20px;	
+}	
+
+.odet-pizza {
+	padding: 0 45px 200px 45px;
+}
+
+.pizzaicon {
+	width: 120px;
+	height: 120px;
+}
+
+.title {
+	padding: 150px 20px;
+}
+
+.main-title p {
+	
+	font-size: 35px; 
+}
+
+.main-title h1 {
+	
+	font-size: 75px;		
+}
+
+.footer-brands {
+	padding-top: 10px;
+}	
+
+.form-quantity {
+	margin-top: 10px;
+	font-size: 8pt;
+	width: 160px;
+}
+
+.head-order {
+	margin-top: 25px;
+}
+
+.custom-select {
+	font-size: 7pt;
+}
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+.buttonPizzaOrder {
+	margin: 10px 160px 20px;	
+}
+
+.odet-pizza {
+	padding: 0 40px 200px 40px;
+}
+
+.pizzaicon {
+	width: 150px;
+	height: 150px;
+}
+
+.title {
+	padding: 230px 20px;
+}
+
+.main-title p {
+	
+	font-size: 45px; 
+}
+
+.main-title h1 {
+	
+	font-size: 85px;		
+}
+
+.footer-brands {
+	padding-top: 10px;
+}	
+
+.form-quantity {
+	margin-top: 3px;
+	font-size: 10pt;
+	width: 140px;
+}
+
+.head-order {
+	margin-top: 25px;
+}
+
+.custom-select {
+	font-size: 10pt;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.buttonPizzaOrder {
+	margin: 10px 258px 20px;	
+}
+
+.pizzas {
+	min-height: 515px;
+}
+
+.odet-pizza {
+	padding: 0 40px 200px 40px;
+}
+
+.title {
+	padding: 200px 20px;
+}
+
+.main-title p {
+	
+	font-size: 65px; 
+}
+
+.main-title h1 {
+	
+	font-size: 105px;		
+}
+
+.footer-brands {
+	padding-top: 10px;
+}	
+
+.head-order {
+	margin-top: 25px;
+}
+
+.form-quantity {
+	margin-top: 3px;
+	width: 160px;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.buttonPizzaOrder {
+	margin: 10px 380px 20px;	
+}
+
+.pizzas {
+	min-height: 510px;
+}
+
+.odet-pizza {
+	padding: 0 90px 230px 90px;
+
+}
+
+.title {
+	padding: 160px 20px;
+}
+
+.odet-pizza {
+	padding: 0 65px 200px 65px;
+}
+
+.main-title p {
+	
+	font-size: 85px; 
+}
+
+.main-title h1 {
+	
+	font-size: 125px;		
+}	
+
+.form-quantity {
+	width: 110px;
+}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+.odet-pizza {
+	padding: 0 60px 230px 60px;
+}
+
+.title {
+	padding: 180px 50px;
+}
+
+.main-title p {
+	
+	font-size: 85px; 
+}
+
+.main-title h1 {
+	
+	font-size: 125px;		
+}	
+
+}

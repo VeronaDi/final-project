@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <title>IT-PIZZA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://use.fontawesome.com/02e600d3f9.js"></script>
+  </head>
+  <body>
+
+  <!--Navigation-->
+
+    <div class="navigation" role="navigation">
+     <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="index.html">IT<span class="logo-style">-</span>PI<span class="logo-style">ZZ</span>A</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav nav-fill nav-justified navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Меню</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pizza.html">Піци</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="order.html">Замовлення</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Галерея</a>
+          </li>
+        </ul>
+          </div>
+      </nav>
+    </div>
+
+<!--Order-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+     <h1 class="pizza-h1 wow flipInX" data-wow-duration="1.5s">ЗА<span class="pizza-h1-span">МОВ</span>ИТИ</h1> 
+    </div>
+  </div>
+</div>
+
+
+<!--Book Table-->
+
+<div class="container container-order">
+<div class="row row-order">
+<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<form>
+  <h3 class="head-order">Забронювати стіл</h3>
+  <div class="form-group">
+    <label for="name">Ім'я</label>
+    <input type="text" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="surname">Прізвище</label>
+    <input type="text" class="form-control">
+  </div>
+
+  <div class="form-group">
+      <label for="phone">Номер телефону</label>
+      <input type="text" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control">
+  </div>
+
+  <div class="form-group">
+  <select class="custom-select">
+      <option selected class="form-control">Виберіть кількість осіб</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+     <label for="date">Оберіть дату та час:</label>
+     <div class='input-group date'>
+      <input id="datetimepicker" type="date" name="datetime" value="">
+     <div class="input-group-addon">
+         <span class="fa fa-calendar"></span>
+     </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalBook">
+      Забронювати
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalBook" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalBook">Дякуємо за замовлення!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Наш менеджер зателефонує Вам протягом 10 хвилин.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
+</div>
+
+<!--Pizza delivery-->
+
+  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <form>
+      <h3 class="head-order">Замовити піцу</h3>
+        <div class="form-group">
+          <label for="name">Ім'я</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="surname">Прізвище</label>
+          <input type="text" class="form-control">  
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Номер телефону</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="address">Адреса доставки</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="row row-order">
+          <div class="col">
+            <select class="custom-select">
+              <option selected class="form-control">Виберіть піцу</option>
+              <option value="1">Маргарита</option>
+              <option value="2">Салямі</option>
+              <option value="3">Кваттро Формаджі</option>
+              <option value="4">Густоза</option>
+              <option value="5">Гавайська</option>
+              <option value="6">Фрутті ді Маре</option>
+              <option value="7">Палермо</option>
+              <option value="8">Карне</option>
+              <option value="9">Парма</option>
+            </select>
+            </div>
+          <div class="col">
+            <input type="text" class="form-control form-quantity" placeholder="Кількість">
+          </div>
+          </div>
+
+          <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalOrder">
+          Замовити
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalOrder">Дякуємо за замовлення!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Наш менеджер зателефонує Вам протягом 10 хвилин.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          </form>
+          </div>
+          </div>
+          </div>
+         
+    <!--Footer-->
+     
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 footer-brands">
+        <p><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></p>
+            <p><a href="#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a></p>
+            <p><a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></p>
+            <p><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></p>
+            <p><a href="#"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></a></p>
+            <p><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></p>    
+        </div> 
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 footer-map">
+          <p>Як нас знайти:</p>
+          <div id="map"></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 footer-addres">
+            <p><b>Адреса:</b></p>
+          <p>м. Івано-Франківськ вул. Євгенія Коновальця 25</p>
+          <br>
+          <p><b>Дзвоніть або пишіть:</b></p>
+          <p>+380503396589</p>
+          <p>itPizza@gamil.com</p>
+          <br>
+          <p><b>Графік роботи:</b></p>
+          <p>Понеділок-Субота / 8:00 - 23:00</p>
+          <p>Неділя / 10::00 - 23:00</p>  
+        </div>  
+      </div>
+      <div class="row copyright">
+        <div class="col d-flex justify-content-center">
+          <p>Copyright © 2018 ІТ-КЛАСТЕР Група №3</p>
+        </div>
+      </div>
+    </div> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.4/moment.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ90IAPMki-NDcP5RkVvp8VnMkW8SWUyQ&callback=myMap"></script>
+              <script>
+              new WOW().init();
+              </script>
+    </body>
+  </html>
