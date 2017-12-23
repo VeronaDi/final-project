@@ -74,6 +74,9 @@ body {
 	padding-top: 15px;
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
+	border-left: 2px solid #fab940;
+	border-top: 2px solid #fab940;
+	border-bottom: 2px solid #fab940;
 }
 
 .border-menu {
@@ -85,44 +88,51 @@ body {
 	background-color: #fcf6ec;	
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-top-right-radius: 25px;
-	border-bottom-right-radius: 25px; 	
-}
-
-.tab-content {
-	padding-left: 15px;
+	border-bottom-right-radius: 25px;
+	padding: 20px 0 10px 15px;
+	border-right: 2px solid #fab940;
+	border-top: 2px solid #fab940;
+	border-bottom: 2px solid #fab940;	 	
 }
 
 .menu-navigation, .menu-content {
 	margin-top: 1vh;
 	margin-bottom: 9vh;	
-}
-    
-
-.container-content {
-	padding-top: 10px; 
-	margin-top: 15px; 	
-	margin-bottom: 15px;    	 	
-	background-color: #FFEEDB;
-	border: 2px solid #9b040c;
-	border-top-right-radius: 25px;		
-	
-} 	
+} 
 
 .menuRight {
 	text-align: center;
 	font-weight:bold;
 	font-size: 1.2em;
-	color: #9b040c;  
+	color: #9b040c;
+	padding-top: 10px;  
 }
 
 .menuLeft {
 	text-align: left;
 	line-height: 1.5em;
 	margin-bottom: 0;
+	
+	color: black;
 }
 
 .ingredientsOfDishes {
-	padding-left: 15px;	 
+	padding-left: 15px;
+	color: black;	 
+}
+
+/* Picture for menu */
+
+.bloggood-ru-div {
+    display: none;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+}
+
+a.bloggood-ru-ssilka:hover+div {
+    display: block;
+
 }
 
 /* Gallery */
@@ -130,8 +140,8 @@ body {
 .gallery-box {
 	border: 4px solid #fcf6ec;
 	border-radius: 5px;
-	margin-top: 1vh;
-	margin-bottom: 1vh;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	padding: 0;
 }
 
@@ -156,6 +166,8 @@ body {
 
 .containerPizza {
 	background-color: #fcf6ec; 
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .containerPizza h3 {
@@ -171,6 +183,7 @@ body {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 15px;
+	min-height: 500px;
 	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -204,10 +217,6 @@ body {
 }
 
 /* Order */
-
-.main {
-	height: 80vh;
-}
 
 .container-order {
 	margin-left: auto;
@@ -252,19 +261,47 @@ body {
 	color: black;
 }
 
+.remove {
+	background: transparent;
+	color: ivory;
+	
+}
+
 .head-order {
 	color: #fab940;
 	text-align: center;
 	text-shadow: 2px 2px #0d0d0d;
 }
 
-#modalBook, #modalOrder {
+.add-pizza {
+	float: right;
+	margin-right: 70px;
+	border:none;
+	color: #fab940;
+	padding: 7px;
+}
+
+.add-pizza:hover {
+	background-color: #fab940;
+	color:black;
+	border-radius: 25px;
+}
+
+.remove {
+	float: right;
+	background: transparent;
+	border: none;
+}
+
+#modalGracias {
 	color: black;
 }
 
 /* About us */
 
 .navigation-about {
+	margin-top: 20px;
+	margin-bottom: 20px;
 	background-color: #fcf6ec;
 	text-align: right;
 	padding-top: 15px;	
@@ -276,6 +313,8 @@ body {
 }
 
 .contant-about {
+	margin-top: 20px;
+	margin-bottom: 20px;
 	padding-top: 10px;
 	background-color: #fcf6ec;	
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -354,6 +393,26 @@ body {
 	font-size: 20px;
 }
 
+.mobtel {
+	color: #fab940;
+	text-decoration: none;
+}
+
+.mobtel:hover {
+	text-decoration: none;
+	color: #A65900;
+}
+
+.mailto {
+	color: #fab940;
+	text-decoration: none;
+}
+
+.mailto:hover {
+	text-decoration: none;
+	color: #A65900;
+}
+
 #map {
 	width: 65%;
 	height: 320px;
@@ -362,7 +421,53 @@ body {
 
 /* Media Queries */
 
+@media (min-width: 100px) and (max-width: 300px) {
+
+.menu-navigation {	
+	border-radius: 25px;	
+	border: 2px solid #fab940;
+}
+
+.menu-content {	
+	border-radius: 25px;	
+	border: 2px solid #fab940;		 	
+}
+
+.buttonPizzaOrder {
+	margin: 10px 85px 20px;	
+}	
+
+.odet-pizza {
+	padding: 0 45px 200px 45px;
+}
+
+.add-pizza {
+	font-size: 8pt;
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+
+.desctoptel {
+	display: none;
+}
+
+.remove {
+	font-size: 10px;
+}
+}
+
 @media (min-width: 300px) and (max-width: 576px) {
+
+.menu-navigation {	
+	border-radius: 25px;	
+	border: 2px solid #fab940;
+}
+
+.menu-content {	
+	border-radius: 25px;	
+	border: 2px solid #fab940;		 	
+}
 
 .buttonPizzaOrder {
 	margin: 10px 85px 20px;	
@@ -409,9 +514,33 @@ body {
 	font-size: 7pt;
 }
 
+.add-pizza {
+	font-size: 10pt;
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+
+.remove {
+	font-size: 10px;
+}
+
+.desctoptel {
+	display: none;
+}
 }
 
 @media (min-width: 577px) and (max-width: 767px) {
+
+.menu-navigation {	
+	border-radius: 25px;	
+	border: 2px solid #fab940;
+}
+
+.menu-content {	
+	border-radius: 25px;	
+	border: 2px solid #fab940;		 	
+}
 
 .buttonPizzaOrder {
 	margin: 10px 160px 20px;	
@@ -458,6 +587,10 @@ body {
 	font-size: 10pt;
 }
 
+.desctoptel {
+	display: none;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -501,6 +634,10 @@ body {
 	width: 160px;
 }
 
+.mobtel {
+	display: none;
+}
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -540,6 +677,10 @@ body {
 	width: 110px;
 }
 
+.mobtel {
+	display: none;
+}
+
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -562,4 +703,16 @@ body {
 	font-size: 125px;		
 }	
 
+.mobtel {
+	display: none;
+}
+
+@media (min-width: 1400px) and (max-width: 2000px) {
+.mobtel {
+	display: none;
+}
+
+.container-order {
+	height: 80vh;
+}
 }

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://use.fontawesome.com/02e600d3f9.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   </head>
   <body>
 
@@ -60,6 +60,7 @@
 
 <!--Book Table-->
 
+
 <div class="container container-order">
 <div class="row row-order">
 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -104,33 +105,14 @@
   <div class="form-group">
      <label for="date">Оберіть дату та час:</label>
      <div class='input-group date'>
-      <input id="datetimepicker" type="date" name="datetime" value="">
+      <input id="datetimepicker">
      <div class="input-group-addon">
-         <span class="fa fa-calendar"></span>
+         <span class="far fa-calendar-alt"></span>
      </div>
     </div>
   </div>
 
-  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalBook">
-      Забронювати
-    </button>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="modalBook" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalBook">Дякуємо за замовлення!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Наш менеджер зателефонує Вам протягом 10 хвилин.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <button type="button" class="btn modalThanks" data-toggle="modal" data-target="#modalGracias">Забронювати</button>
 </form>
 </div>
 
@@ -164,6 +146,7 @@
           <input type="text" class="form-control">
         </div>
 
+        <div id="add-order">
         <div class="row row-order">
           <div class="col">
             <select class="custom-select">
@@ -183,43 +166,27 @@
             <input type="text" class="form-control form-quantity" placeholder="Кількість">
           </div>
           </div>
+        </div>
 
-          <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalOrder">
-          Замовити
-          </button>
+          <button class="btn-link add-pizza">Додати піцу</button>
 
-          <!-- Modal -->
-          <div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalOrder">Дякуємо за замовлення!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>Наш менеджер зателефонує Вам протягом 10 хвилин.</p>
-              </div>
-            </div>
-          </div>
-          </div>
+          <button type="button" class="btn modalThanks" data-toggle="modal" data-target="#modalGracias">Замовити</button>
           </form>
           </div>
           </div>
           </div>
+        
          
     <!--Footer-->
      
     <div class="container-fluid">
       <div class="row footer">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 footer-brands">
-        <p><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></p>
-            <p><a href="#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a></p>
-            <p><a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></p>
-            <p><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></p>
-            <p><a href="#"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></a></p>
-            <p><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></p>    
+        <p><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i></a></p>
+        <p><a target="_blank" href="https://www.youtube.com/watch?v=2aGkRUJzo-A"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a></p>
+        <p><a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a></p>
+        <p><a target="_blank" href="https://telegram.org/"><i class="fab fa-telegram-plane fa-2x" aria-hidden="true"></i></a></p>
+        <p><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></p>    
         </div> 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 footer-map">
           <p>Як нас знайти:</p>
@@ -230,8 +197,9 @@
           <p>м. Івано-Франківськ вул. Євгенія Коновальця 25</p>
           <br>
           <p><b>Дзвоніть або пишіть:</b></p>
-          <p>+380503396589</p>
-          <p>itPizza@gamil.com</p>
+          <p class="desctoptel">+380503396589</p>
+          <p><a href="tel:+380503396589" class="mobtel">+380503396589</a></p>
+          <p><a href="mailto:itpizza@gmail.com" class="mailto">itpizza@gmail.com</a></p>
           <br>
           <p><b>Графік роботи:</b></p>
           <p>Понеділок-Субота / 8:00 - 23:00</p>
@@ -249,6 +217,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.4/moment.min.js"></script>
+    <script src="js/jquery.datetimepicker.js"></script>
     <script src="js/jquery.datetimepicker.full.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/wow.min.js"></script>

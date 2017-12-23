@@ -24,9 +24,41 @@ $(document).ready(function() {
   })
 })
 
-// Date //
+// Add pizza //
 
-$.datetimepicker.setLocale('uk');
+$('.add-pizza').on('click', function() { 
+  var add1='<div class="row row-order"><div class="col"><select class="custom-select">';
+  var add2='<option selected class="form-control">Виберіть піцу</option><option value="1">Маргарита</option>';
+  var add3='<option value="2">Салямі</option><option value="3">Кваттро Формаджі</option>';
+  var add4='<option value="4">Густоза</option><option value="5">Гавайська</option><option value="6">Фрутті ді Маре</option>';
+  var add5='<option value="7">Палермо</option><option value="8">Карне</option><option value="9">Парма</option></select></div>';
+  var add6='<div class="col"><input type="text" class="form-control form-quantity" placeholder="Кількість"></div>';
+  var add7='<button class="remove"><i class="far fa-times-circle fa-2x"></i></button></div>'
+  $('#add-order').append(add1+add2+add3+add4+add5+add6+add7);
+  return false; //prevent form submission
+});
+
+$('.row-order').on('click', '.remove', function() {
+  $(this).parent().remove();
+  return false; //prevent form submission
+});
+
+// Modal Window Thanks //
+
+$(document).ready(function() {
+  var d1='<div class="modal fade" id="modalGracias" tabindex="-1" role="dialog" aria-hidden="true">';
+  var d2='<div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header">';
+  var d3='<h5 class="modal-title">Дякуємо за замовлення!</h5>';
+  var d4='<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+  var d5='<div class="modal-body">';
+  var d6='<p>Наш менеджер зателефонує Вам протягом 10 хвилин.</p></div></div></div></div>';
+  $("body").append(d1+d2+d3+d4+d5+d6)
+    $(".modalThanks").click(function() {
+      $("#modalGracias").modal('show');
+  })
+})
+
+// Date //
 
 jQuery('#datetimepicker').datetimepicker({
   lazyInit: true,
@@ -36,6 +68,4 @@ jQuery('#datetimepicker').datetimepicker({
   dayOfWeekStart: 1,
   theme:'dark',
 });
-
-
 
