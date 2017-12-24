@@ -264,7 +264,6 @@ a.bloggood-ru-ssilka:hover+div {
 .remove {
 	background: transparent;
 	color: ivory;
-	
 }
 
 .head-order {
@@ -285,12 +284,18 @@ a.bloggood-ru-ssilka:hover+div {
 	background-color: #fab940;
 	color:black;
 	border-radius: 25px;
+	text-decoration: none;
 }
 
 .remove {
-	float: right;
 	background: transparent;
 	border: none;
+	position: absolute;
+	right: 0;
+}
+
+#add-order {
+	position: relative;
 }
 
 #modalGracias {
@@ -642,6 +647,11 @@ a.bloggood-ru-ssilka:hover+div {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
+.container-order {
+	margin-top: 40px;
+	margin-bottom: 120px;
+}
+
 .buttonPizzaOrder {
 	margin: 10px 380px 20px;	
 }
@@ -685,6 +695,11 @@ a.bloggood-ru-ssilka:hover+div {
 
 @media (min-width: 1200px) and (max-width: 1399px) {
 
+.container-order {
+	margin-top: 40px;
+	margin-bottom: 120px;
+}
+
 .odet-pizza {
 	padding: 0 60px 230px 60px;
 }
@@ -707,12 +722,16 @@ a.bloggood-ru-ssilka:hover+div {
 	display: none;
 }
 
+}
+
 @media (min-width: 1400px) and (max-width: 2000px) {
 .mobtel {
 	display: none;
 }
 
 .container-order {
-	height: 80vh;
+	margin-top: 80px;
+	margin-bottom: 210px;
 }
+
 }
