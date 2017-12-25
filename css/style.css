@@ -177,13 +177,15 @@ a.bloggood-ru-ssilka:hover+div {
 .price {
 	color: #9b040c;
 	font-size: 25px;
+	position: absolute;
+	bottom: 10px;
 }
 
 .pizzas {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 15px;
-	min-height: 500px;
+	min-height: 462px;
 	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -245,8 +247,9 @@ a.bloggood-ru-ssilka:hover+div {
 	padding-left: 10px;
 }
 
-.btn {
+.btn-order {
 	margin-left: 12px;
+	padding: 10px 20px;
 	color: black;
 	background-color: #fab940;
 	border: none;
@@ -255,7 +258,7 @@ a.bloggood-ru-ssilka:hover+div {
 	text-align: center;
 }
 
-.btn:hover {
+.btn-order:hover {
 	background-color: #A65900;
 	text-decoration: none;
 	color: black;
@@ -292,6 +295,7 @@ a.bloggood-ru-ssilka:hover+div {
 	border: none;
 	position: absolute;
 	right: 0;
+	padding-top: 4px;
 }
 
 #add-order {
@@ -337,7 +341,7 @@ a.bloggood-ru-ssilka:hover+div {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 15px;
-	min-height: 400px;
+	min-height: 377px;
 	text-align: center;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -605,7 +609,7 @@ a.bloggood-ru-ssilka:hover+div {
 }
 
 .pizzas {
-	min-height: 515px;
+	min-height: 462px;
 }
 
 .odet-pizza {
@@ -657,7 +661,15 @@ a.bloggood-ru-ssilka:hover+div {
 }
 
 .pizzas {
-	min-height: 510px;
+	min-height: 452px;
+}
+
+.article-card-about {
+	min-height: 343px;
+}
+
+.stuff {
+	min-height: 516px;
 }
 
 .odet-pizza {
