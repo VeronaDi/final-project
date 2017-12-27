@@ -16,7 +16,7 @@
 
     <div class="navigation" role="navigation">
       <nav class="navbar navbar-expand-md navbar-dark">
-          <a class="navbar-brand" href="index.html">IT<span class="logo-style">-</span>PI<span class="logo-style">ZZ  </span>A</a>
+          <a class="navbar-brand" href="index.html">IT<span class="logo-style">-</span>PI<span class="logo-style">ZZ</span>A</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -57,8 +57,12 @@
 
                      <!-- Menu navigation -->
 
-                    <div class="col-12 col-md-3 menu-navigation">
-                        <nav class="navbar-nav navbar-light border-menu">                                      
+                    <div class="col-12 col-md-3 text-center menu-navigation">
+                        <nav class="navbar-nav navbar-light">
+                           <div class="NavFotoUp">
+                               <img src="images/menu/1blac.png" 
+                                    width="100%" height="100%">                           
+                           </div>                                      
                            <ul id="clothing-nav" class="nav navbar-nav" role="tablist">
                               <li class="nav-item">
                                  <a class="nav-link active" 
@@ -110,14 +114,25 @@
                               </li>                                    
                            </ul>                            
                         </nav>
-                        <div>
-                            <p class="bg-dark text-center">Logo</p>
+                        <div class="NavFotoCenter">                            
+                            <img src="images/menu/ant.png" 
+                                 width="100%" height="100%"
+                                 class="wow flipInX NavFotoCenter"
+                                 data-wow-delay="1s"
+                                 href="#myModal-pizza" role="button"           
+                                 data-toggle="modal"                             
+                                 aria-hidden="true">
                         </div>
+                        <div class="NavFotoDown">
+                            <img src="images/menu/2blac.png" 
+                                 width="100%" height="100%">
+                        </div>
+                            
                     </div>
                  
                      <!-- Content -->
 
-                     <div class="col-12 col-md-9 menu-content">                        
+                     <div class="col-12 col-md-9 menuСontent">                        
                           <div id="clothing-nav-content" class="tab-content">
                                 
                                      <!-- Salads -->
@@ -126,28 +141,20 @@
                                      class="tab-pane fade show active" 
                                      id="page1"       
                                      aria-labelledby="page1-tab">                                    
-                                     <div class="container-menu-content">
+                                     <div class="container">
                                          <div class="row">
                                              <div class="col-12 col-md-9">
-                                                <a href="#" class="bloggood-ru-ssilka">
                                                   <p class="menuLeft">1.
                                                      <strong> Цезар </strong>
                                                      <div class="ingredientsOfDishes">Склад: Куряче філе, помідор, перепелине яйце, грінки, соус "Цезар".
                                                      </div>
-                                                  </p>
-                                                </a>
-                                                <div class="bloggood-ru-div">
-                                                     <img src="images/igridientsr.jpg" width="100%" height="100%">
-                                                </div>  
-                                                
-  
-                                                                 
+                                                  </p>                                 
                                              </div>
                                              <div class="col-12 col-md-3">
                                                  <p class="menuRight">250 г. 50 грн.</p>
                                              </div>                                        
                                          </div>                               
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">2.
                                                      <strong> Овочевий </strong>
@@ -159,7 +166,7 @@
                                                  <p class="menuRight">250 г. 35 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">3.
                                                      <strong> Європейський </strong>
@@ -171,7 +178,7 @@
                                                  <p class="menuRight">250 г. 45 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">4.
                                                      <strong> Грильований </strong>
@@ -182,6 +189,8 @@
                                              <div class="col-12 col-md-3">
                                                  <p class="menuRight">250 г. 30 грн.</p>
                                              </div>
+                                          </div>
+                                          <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">5.
                                                      <strong> Теплий з телятиною </strong>
@@ -191,9 +200,56 @@
                                              </div>
                                              <div class="col-12 col-md-3">
                                                  <p class="menuRight">250 г. 50 грн.</p>
-                                             </div> 
+                                             </div>
+                                          </div>
 
-                                         </div>
+                                          
+                                             <div class="row">              
+                                               <div class="col">
+                                                   <div id="demo" class="carousel slide">
+
+                                               <!-- Slide indication -->
+                                                         <ul class="carousel-indicators">
+                                                           <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                                           <li data-target="#demo" data-slide-to="1"></li>
+                                                           <li data-target="#demo" data-slide-to="2"></li>
+                                                           <li data-target="#demo" data-slide-to="3"></li>
+                                                           <li data-target="#demo" data-slide-to="4"></li>
+                                                         </ul>
+  
+                                                <!-- Slideshow -->
+                                                         <div class="carousel-inner menuCarousel">
+                                                             <div class="carousel-item active">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>                                                                
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                         </div>
+  
+                                                <!-- Left and right button -->
+  
+                                                         <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                                           <span class="carousel-control-prev-icon"></span>
+                                                         </a>
+                                                         <a class="carousel-control-next" href="#demo" data-slide="next">
+                                                           <span class="carousel-control-next-icon"></span>
+                                                         </a>
+                                                   </div>     
+                                               </div>
+                                             </div>
+                                          
+                                             
+                                         
                                      </div>                                             
                                 </div>
 
@@ -203,12 +259,12 @@
                                      class="tab-pane fade" 
                                      id="page2" 
                                      aria-labelledby="page2-tab">
-                                     <div class="container-menu-content">
+                                     <div class="container">
                                          <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">1.
                                                      <strong> Борщ </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes"> Справжній український борщ. Готуєсь у печі із свіжого не мороженого м'яса.        
                                                      </div>
                                                   </p>                        
                                              </div>
@@ -216,11 +272,11 @@
                                                  <p class="menuRight">300 г. 40 грн.</p>
                                              </div>                                        
                                          </div>                               
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">2.
                                                      <strong> Бульйон </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Український бульйон. Готуєсь із свіжого не мороженого півня із додаванням домошньої лапші.        
                                                      </div>
                                                   </p>
                                              </div>
@@ -228,11 +284,11 @@
                                                  <p class="menuRight">300 г. 40 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">3.
                                                      <strong> Солянка </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Готуєсь із найсвіжіших офочів. Подається із лимоном на сметаною на Ваш смак. 
                                                      </div>
                                                   </p>
                                              </div>
@@ -240,11 +296,11 @@
                                                  <p class="menuRight">300 г. 45 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLefteft">4.
                                                      <strong> Польський журек </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Польська національна страва. Готуєсь із свіжих овочів з додаванням червоного перцю.        
                                                      </div>
                                                   </p>
                                              </div>
@@ -252,11 +308,11 @@
                                                  <p class="menuRight">300 г. 60 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">5.
                                                      <strong> Грибна юшка </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Український грибна юшка із білих грибів. Готуєсь із свіжих овочі із додаванням білих грибів обсмажених та приправлених білою цебулею.     
                                                      </div>
                                                   </p>
                                              </div>
@@ -264,11 +320,11 @@
                                                  <p class="menuRight">300 г. 55 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">6.
                                                      <strong> Бограч </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Справжній український Богрич. Готуєся у печі із додаванням червонорго перцю. 
                                                      </div>
                                                   </p>
                                              </div>
@@ -276,17 +332,21 @@
                                                  <p class="menuRight">300 г. 65 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">7.
                                                      <strong> Крем-cуп з гарбуза </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Крем-суп із шампіньйонами.       
                                                      </div>
                                                   </p>
                                              </div>
                                              <div class="col-12 col-md-3">
                                                  <p class="menuRight">300 г. 55 грн.</p>
                                              </div>                                        
+                                         </div>
+                                         <div class="text-center PizzaMenu">
+                                             <img src="images/menu/1876.png" 
+                                                  width="60%" height="60%">                   
                                          </div>
                                          
                                      </div>                                         
@@ -298,7 +358,7 @@
                                      class="tab-pane fade" 
                                      id="page3" 
                                      aria-labelledby="page3-tab">
-                                     <div class="container-menu-content">
+                                     <div class="container">
                                          <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">1.
@@ -311,7 +371,7 @@
                                                  <p class="menuRight">300 г. 65 грн.</p>
                                              </div>                                        
                                          </div>                               
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">2.
                                                      <strong> Картопля Дофіне </strong>
@@ -323,7 +383,7 @@
                                                  <p class="menuRight">300 г. 80 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">3.
                                                      <strong> Овочі Гриль </strong> 
@@ -335,7 +395,7 @@
                                                  <p class="menuRight">300 г. 55 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">4.
                                                      <strong> Картопля по-селянські </strong>
@@ -347,7 +407,7 @@
                                                  <p class="menuRight">300 г. 25 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">5.
                                                      <strong> Картопля по-домашньому </strong>
@@ -359,6 +419,49 @@
                                                  <p class="menuRight">300 г. 25 грн.</p>
                                              </div>                                        
                                          </div>
+                                         <div class="row">              
+                                               <div class="col">
+                                                   <div id="demo" class="carousel slide">
+
+                                               <!-- Slide indication -->
+                                                         <ul class="carousel-indicators">
+                                                           <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                                           <li data-target="#demo" data-slide-to="1"></li>
+                                                           <li data-target="#demo" data-slide-to="2"></li>
+                                                           <li data-target="#demo" data-slide-to="3"></li>
+                                                           <li data-target="#demo" data-slide-to="4"></li>
+                                                         </ul>
+  
+                                                <!-- Slideshow -->
+                                                         <div class="carousel-inner menuCarousel">
+                                                             <div class="carousel-item active">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>                                                                
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                         </div>
+  
+                                                <!-- Left and right button -->
+  
+                                                         <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                                           <span class="carousel-control-prev-icon"></span>
+                                                         </a>
+                                                         <a class="carousel-control-next" href="#demo" data-slide="next">
+                                                           <span class="carousel-control-next-icon"></span>
+                                                         </a>
+                                                   </div>     
+                                               </div>
+                                             </div>
                                      </div>
                                 </div>
 
@@ -368,7 +471,7 @@
                                      class="tab-pane fade" 
                                      id="page4" 
                                      aria-labelledby="page4-tab">
-                                     <div class="container-menu-content">
+                                     <div class="container">
                                          <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">1.
@@ -381,7 +484,7 @@
                                                  <p class="menuRight">0,5 л. 20 грн.</p>
                                              </div>                                        
                                          </div>                               
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">2.
                                                      <strong> Соки </strong>
@@ -393,7 +496,7 @@
                                                  <p class="menuRight">0,2 л. 12 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">3.
                                                      <strong> Чай </strong>
@@ -405,7 +508,7 @@
                                                  <p class="menuRight">0,5 л. 25 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">4.
                                                      <strong> Кава </strong> 
@@ -417,7 +520,7 @@
                                                  <p class="menuRight">0,2 л. 15 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">5.
                                                      <strong> Коктейлі молочні </strong> 
@@ -429,7 +532,7 @@
                                                  <p class="menuRight">0,2 л. 22 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">6.
                                                      <strong> Пиво б/а </strong> 
@@ -441,6 +544,49 @@
                                                  <p class="menuRight">0,5 л. 36 грн.</p>
                                              </div>                                        
                                          </div>
+                                         <div class="row">              
+                                               <div class="col">
+                                                   <div id="demo" class="carousel slide">
+
+                                               <!-- Slide indication -->
+                                                         <ul class="carousel-indicators">
+                                                           <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                                           <li data-target="#demo" data-slide-to="1"></li>
+                                                           <li data-target="#demo" data-slide-to="2"></li>
+                                                           <li data-target="#demo" data-slide-to="3"></li>
+                                                           <li data-target="#demo" data-slide-to="4"></li>
+                                                         </ul>
+  
+                                                <!-- Slideshow -->
+                                                         <div class="carousel-inner menuCarousel">
+                                                             <div class="carousel-item active">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>                                                                
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                         </div>
+  
+                                                <!-- Left and right button -->
+  
+                                                         <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                                           <span class="carousel-control-prev-icon"></span>
+                                                         </a>
+                                                         <a class="carousel-control-next" href="#demo" data-slide="next">
+                                                           <span class="carousel-control-next-icon"></span>
+                                                         </a>
+                                                   </div>     
+                                               </div>
+                                             </div>
                                      </div>
                                 </div>
 
@@ -450,12 +596,12 @@
                                      class="tab-pane fade" 
                                      id="page5" 
                                      aria-labelledby="page5-tab">
-                                     <div class="container-menu-content">
+                                     <div class="container">
                                          <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">1.
                                                      <strong> Тірамісу </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Шоколдний десерт приготовлений із домашніх крекерів  
                                                      </div>
                                                   </p>                        
                                              </div>
@@ -463,11 +609,11 @@
                                                  <p class="menuRight">100 гр. 33 грн.</p>
                                              </div>                                        
                                          </div>                               
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">2.
                                                      <strong> Наполеон </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Торт домашнього приготування із ванільною помадкою.       
                                                      </div>
                                                   </p>
                                              </div>
@@ -475,11 +621,11 @@
                                                  <p class="menuRight">100 гр. 22 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">3.
                                                      <strong> Штрудель з яблуками </strong>
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Домашній штрудель приготовлений у печі із свіжих українських яблук.       
                                                      </div>
                                                   </p>
                                              </div>
@@ -487,11 +633,11 @@
                                                  <p class="menuRight">100 гр. 22 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">4.
                                                      <strong> Шоколадний торт </strong>    
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Коржі випечені у печі. Готується із додаваням ванільного крему із чорносливом.       
                                                      </div>
                                                   </p>
                                              </div>
@@ -499,11 +645,11 @@
                                                  <p class="menuRight">100 гр. 25 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">5.
                                                      <strong> Вершкова панакота </strong>    
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Панакота із додаванням свіжозбитих вершків.       
                                                      </div>
                                                   </p>
                                              </div>
@@ -511,30 +657,61 @@
                                                  <p class="menuRight">100 гр. 30 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">6.
                                                      <strong> Морозиво з фруктами </strong>    
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
+                                                     <div class="ingredientsOfDishes">Пломбірне, або шоколадне морозиво із додаванням свіжих фруктів.       
                                                      </div>
                                                   </p>
                                              </div>
                                              <div class="col-12 col-md-3">
                                                  <p class="menuRight">100 гр. 30 грн.</p>
                                              </div>                                        
-                                         </div>
-                                         <div class="row text-menu">
-                                             <div class="col-12 col-md-9">
-                                                  <p class="menuLeft">7.
-                                                     <strong> Cирник з шоколадом </strong>    
-                                                     <div class="ingredientsOfDishes">... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...  ... ... ... ... ... ...       
-                                                     </div>
-                                                  </p>
+                                         </div>                                         
+                                         <div class="row">              
+                                               <div class="col">
+                                                   <div id="demo" class="carousel slide">
+
+                                               <!-- Slide indication -->
+                                                         <ul class="carousel-indicators">
+                                                           <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                                           <li data-target="#demo" data-slide-to="1"></li>
+                                                           <li data-target="#demo" data-slide-to="2"></li>
+                                                           <li data-target="#demo" data-slide-to="3"></li>
+                                                           <li data-target="#demo" data-slide-to="4"></li>
+                                                         </ul>
+  
+                                                <!-- Slideshow -->
+                                                         <div class="carousel-inner menuCarousel">
+                                                             <div class="carousel-item active">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>                                                                
+                                                             <div class="carousel-item">
+                                                                 <img src="images/menu/1544.jpg" alt="IT-PIZZA" width="100%" height="100%">
+                                                             </div>
+                                                         </div>
+  
+                                                <!-- Left and right button -->
+  
+                                                         <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                                           <span class="carousel-control-prev-icon"></span>
+                                                         </a>
+                                                         <a class="carousel-control-next" href="#demo" data-slide="next">
+                                                           <span class="carousel-control-next-icon"></span>
+                                                         </a>
+                                                   </div>     
+                                               </div>
                                              </div>
-                                             <div class="col-12 col-md-3">
-                                                 <p class="menuRight">100 гр. 30 грн.</p>
-                                             </div>                                        
-                                         </div>
                                      </div>
                                 </div>
 
@@ -544,7 +721,7 @@
                                      class="tab-pane fade" 
                                      id="page6"       
                                      aria-labelledby="page6-tab">                                    
-                                     <div class="container-menu-content">
+                                     <div class="container">
                                          <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">1.
@@ -557,7 +734,7 @@
                                                  <p class="menuRight">350 г. 40 грн.</p>
                                              </div>                                        
                                          </div>                               
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">2.
                                                      <strong> Салямі </strong>
@@ -569,7 +746,7 @@
                                                  <p class="menuRight">375 г. 75 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">3.
                                                      <strong> Кваттро Формаджі </strong>
@@ -581,7 +758,7 @@
                                                  <p class="menuRight">475 г. 75 грн.</p>
                                              </div>                                        
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">4.
                                                      <strong> Густоза </strong>
@@ -593,7 +770,7 @@
                                                  <p class="menuRight">460 г. 62 грн.</p>
                                              </div>
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">5.
                                                      <strong> Гавайська </strong>
@@ -605,7 +782,7 @@
                                                  <p class="menuRight">460 г. 75 грн.</p>
                                              </div> 
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">6.
                                                      <strong> Фрутті ді Маре </strong>
@@ -617,7 +794,7 @@
                                                  <p class="menuRight">500 г. 98 грн.</p>
                                              </div> 
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">7.
                                                      <strong> Палермо </strong>
@@ -629,7 +806,7 @@
                                                  <p class="menuRight">450 г. 72 грн.</p>
                                              </div> 
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">8.
                                                      <strong> Карне </strong>
@@ -641,7 +818,7 @@
                                                  <p class="menuRight">450 г. 69 грн.</p>
                                              </div> 
                                          </div>
-                                         <div class="row text-menu">
+                                         <div class="row">
                                              <div class="col-12 col-md-9">
                                                   <p class="menuLeft">9.
                                                      <strong> Парма </strong>
@@ -653,13 +830,15 @@
                                                  <p class="menuRight">435 г. 89 грн.</p>
                                              </div> 
                                          </div>
+                                         <div class="text-center PizzaMenu">
+                                             <img src="images/menu/18.png" 
+                                                  width="60%" height="60%">                   
+                                         </div>
                                          
                                      </div>                                   
                                 </div>
                      
-                          </div>
-
-                         
+                          </div>                         
                      </div> 
 
                  </div>

@@ -22,7 +22,7 @@ $(document).ready(function() {
   var part2 ='<div class="modal-dialog"> <div class="modal-content"> <div class="modal-header">';
   var part3 ='<h3 id="myModal-pizza-Label">ЗАМОВИТИ ПІЦУ</h3>';
   var part4 ='<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>';
-  var part5 ='</div> <div class="modal-body"> <form> <div class="form-group"> <label for="name">Ім&rsquo;я</label>';
+  var part5 ='</div> <div class="modal-body"> <form> <div class="form-group"> <label for="name">Ім\'я</label>';
   var part6 ='<input type="text" class="form-control"> </div> <div class="form-group">';
   var part7 ='<label for="surname">Прізвище</label> <input type="text" class="form-control">';
   var part8 ='</div> <div class="form-group"> <label for="phone">Номер телефону</label>';
@@ -35,10 +35,9 @@ $(document).ready(function() {
   var part15 ='<option value="4">Густоза</option> <option value="5">Гавайська</option> <option value="6">Фрутті ді Маре</option>';
   var part16 ='<option value="7">Палермо</option> <option value="8">Карне</option> <option value="9">Парма</option> </select> </div>';
   var part17 ='<div class="col"> <input type="text" class="form-control form-quantity" placeholder="Кількість"> </div> </div> </form>';
-  var part18 ='<button class="btn-link add-pizza">Додати піцу</button>';
-  var part19 ='</div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Відмінити</button>'
-  var part20 ='<button class="btn btn-success">Замовити</button> </div> </div> </div> </div>';
-    $("body").append(part1+part2+part3+part4+part5+part6+part7+part8+part9+part10+part11+part12+part13+part14+part15+part16+part17+part18+part19+part20);
+  var part18 ='</div> <div class="modal-footer"> <button class="btn" data-dismiss="modal" aria-hidden="true">Відмінити</button>'
+  var part19 ='<button class="btn btn-success">Замовити</button> </div> </div> </div> </div>';
+    $("body").append(part1+part2+part3+part4+part5+part6+part7+part8+part9+part10+part11+part12+part13+part14+part15+part16+part17+part18+part19);
     $(".btnPizzaOrder").click(function() {
       $("#myModal-pizza").modal('show');
   })
