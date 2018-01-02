@@ -60,6 +60,11 @@ body {
 	padding: 0 65px 230px 65px;
 }
 
+.btnPizzaOrder {
+	cursor: pointer;
+}
+
+
 /* Menu content */
 
 .fatherMenu {
@@ -79,15 +84,19 @@ body {
 	margin-left: 0;
 }
 
-.NavFotoUp, .NavFotoCenter, .NavFotoDown {
+.NavFotoUp, .FotoOrder, .NavFotoDown {
     padding: 10px 0 10px 0;
+}
+
+.FotoOrder {
+	cursor: pointer;
 }
 
 .PizzaMenu {
 	margin: 10px 0 0 0;
 }
 
-.menuCarousel {
+.menuCarousel, #carouselExampleIndicators {
 	border: 4px solid #fab940;
 	border-radius: 5px;
 }		
@@ -122,24 +131,6 @@ body {
 .ingredientsOfDishes {
 	padding-left: 15px;
 	color: black;	 
-}
-
-/* Picture for menu */
-
-.SaladsImg-div {
-    display: none;
-    padding-right: 15px;
-    padding-bottom: 15px;
-
-}
-
-a.SaladsImg:hover+div {
-    display: block;
-
-}
-
-.container-menuСontent a {
-	text-decoration: none;
 }
 
 /* Gallery */
@@ -441,18 +432,33 @@ a.SaladsImg:hover+div {
 
 @media (min-width: 100px) and (max-width: 300px) {
 
-.menu-navigation {	
-	border: 2px solid #fab940;
+.buttonPizzaOrder {
+	margin: 10px 85px 20px;	
+}	
+
+.menu-navigation {		
 	margin-bottom: 0;
 }
 
+.menu-navigation a {
+    font-size: 20px;    
+    padding: 0.2rem;    
+    border-left: 4px solid black;    
+	border-right: 4px solid black;
+	margin-left: 15%;
+	margin-right: 15%;
+}    
+
+.FotoOrder {
+	display:none;
+}
+
 .menuСontent {	
-	border: 2px solid #fab940;
 	margin-top: 0;		 	
 }
 
 .buttonPizzaOrder {
-	margin: 10px 85px 20px;	
+	margin: 10px 40px 20px;	
 }	
 
 .odet-pizza {
@@ -477,18 +483,29 @@ a.SaladsImg:hover+div {
 
 @media (min-width: 300px) and (max-width: 576px) {
 
-.menu-navigation {	
-	border: 2px solid #fab940;
+.menu-navigation {		
 	margin-bottom: 0;
 }
 
+.menu-navigation a {
+    font-size: 30px;    
+    padding: 0.1rem;
+    border-left: 4px solid black;    
+	border-right: 4px solid black;
+	margin-left: 17%;
+	margin-right: 17%;
+}
+
+.FotoOrder {
+	display:none;
+}
+
 .menuСontent {	
-	border: 2px solid #fab940;
 	margin-top: 0;		 	
 }
 
 .buttonPizzaOrder {
-	margin: 10px 85px 20px;	
+	margin: 10px 125px 20px;	
 }	
 
 .odet-pizza {
@@ -550,13 +567,24 @@ a.SaladsImg:hover+div {
 
 @media (min-width: 577px) and (max-width: 767px) {
 
-.menu-navigation {	
-	border: 2px solid #fab940;
+.menu-navigation {		
 	margin-bottom: 0;
 }
 
-.menuСontent {	
-	border: 2px solid #fab940;
+.menu-navigation a {
+    font-size: 30px;    
+    padding: 0.1rem;
+    border-left: 4px solid black;    
+	border-right: 4px solid black;
+	margin-left: 22%;
+	margin-right: 22%;
+}
+
+.FotoOrder {
+	display:none;
+}
+
+.menuСontent {		
 	margin-top: 0;		 	
 }
 
